@@ -2,7 +2,7 @@
 
 SoftwareSerial Bluetooth_trans(10,11); // RX,TX
 
-char transmit = 0;
+int transmit = 1;
 
 void setup() {
   Bluetooth_trans.begin(9600);
