@@ -1,5 +1,5 @@
 # RSSI-Arduino
-Radio Signal Strength Indicator(RRSI) is widely used in robotics for localization to a docking hub or various other applications.
+Radio Signal Strength Indicator(RRSI) is widely used in robotics for localization to a docking hub or various other applications.  When a device gets in range it tries pairing with it given AT commands and then transmits/recieves afterwards.  In this project I do a rudimentary version of that where the bluetooth receiver gets data then checks if it's receiving.  If it's not receiving then that means it's not near.   
 
 
 ### Instructions
