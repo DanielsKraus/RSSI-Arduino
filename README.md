@@ -4,8 +4,9 @@ Radio Signal Strength Indicator(RRSI) is widely used in robotics for localizatio
 
 ### Instructions
 
-- Download code
-  Upload code to your 2 microcontrollers. One microcontroller transmit code and the other reciever code.
+- Download code <br />
+  Upload code to your 2 microcontrollers. <br /> 
+  One microcontroller transmit code and the other reciever code. <br />
 
 - Wiring <br />
   Board TX  ---> Bluetooth RX <br />
