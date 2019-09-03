@@ -14,13 +14,11 @@ void setup() {
 void loop() {
   Signal = Bluetooth_rec.read();
   
-  if(prevSignal>Signal)
-    Bluetooth_rec.println("getting further away");
-  else if(prevSignal<Signal)
-    Bluetooth_rec.println("moving closer");
+  if(prevSignal==Signal)
+    Bluetooth_rec.println("In range");
   else
-    Bluetooth_rec.println("Not close");
-    
+    Bluetooth_rec.println("Not in range"); 
+ 
   delay(100);   
   prevSignal = Signal;
 }
