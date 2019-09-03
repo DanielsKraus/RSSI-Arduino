@@ -14,7 +14,7 @@ void setup() {
 void loop() {
   Signal = Bluetooth_rec.read();
   
-  if(prevSignal==Signal)
+  if(prevSignal == Signal || Signal > 0)
     Bluetooth_rec.println("In range");
   else
     Bluetooth_rec.println("Not in range"); 
