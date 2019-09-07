@@ -1,5 +1,5 @@
-#ifndef COMMANDS_h
-#define COMMANDS_h
+#ifndef COMMANDS_H
+#define COMMANDS_H
 
 class commands()
 {
