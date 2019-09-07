@@ -6,9 +6,6 @@ int transmit = 1;
 
 void setup() {
   Bluetooth_trans.begin(9600);
-  while(!Bluetooth_trans.available()){
-    Bluetooth_trans.print("Failed to initialize");
-  }
 }
 
 void loop() {
