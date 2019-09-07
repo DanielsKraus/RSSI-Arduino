@@ -37,7 +37,7 @@ Command::Command()
     pass = "";
     addr = "";
     scan = "";
-    
+    type = "";
 }
 Command::Command()
 {
