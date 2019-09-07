@@ -9,7 +9,6 @@ void setup() {
   while(!Bluetooth_trans.available()){
     Bluetooth_trans.print("Failed to initialize");
   }
-  Bluetooth_trans.print("Bluetooth intialized");
 }
 
 void loop() {
