@@ -1,7 +1,7 @@
 #ifndef COMMANDS_H
 #define COMMANDS_H
 
-class command()
+class Command()
 {
   private:
     String prof;
