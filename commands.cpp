@@ -1,3 +1,5 @@
+#include "commands.h"
+
 class Commmand
 {
   private:
