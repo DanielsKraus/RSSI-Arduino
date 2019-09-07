@@ -1,24 +1,28 @@
 #include<SoftwareSerial.h>
 
 SoftwareSerial Bluetooth_rec(10,11); // RX,TX
-int Signal,prevSignal;               // signal for determining strength
+int Signal;               
+int signal2,prevSignal2;
+int antennaPin = 5;
 
 void setup() {
   Bluetooth_rec.begin(9600);
   while(!Bluetooth_rec.available()){
     Bluetooth_rec.print("Failed to initialize");
   }
-  Bluetooth_rec.print("Bluetooth intialized");
 }
 
 void loop() {
   Signal = Bluetooth_rec.read();
-  
-  if(prevSignal == Signal || Signal > 0)
-    Bluetooth_rec.println("In range");
+  Signal2 = analogRead(antennaPin);
+  if(Signal > 0)
+    // in range of bluetooth
+    if(Signal2 > prevSignal2)
+      //moving closer to the transmitter do something here
   else
-    Bluetooth_rec.println("Not in range"); 
+    // not in range
  
   delay(100);   
-  prevSignal = Signal;
+  prevSignal2 = Signal2;
+  Signal = 0;
 }
