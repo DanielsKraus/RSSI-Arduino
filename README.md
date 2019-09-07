@@ -14,6 +14,6 @@ Radio Signal Strength Indicator(RRSI) is widely used in robotics for localizatio
   Board 5v  ---> Bluetooth VCC <br />
   Board GND ---> Bluetooth GND <br />
   Board A5  ---> Antenna <br />
-  Board GND ---> Resistors ---> Antenna <br />
+  Board GND ---> Resistor ---> Antenna <br />
   
   Note: different resistors will give you different readings.
